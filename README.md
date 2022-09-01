@@ -1,2 +1,2 @@
 # bulletin_board
-MySQLとPHPで作成した簡易掲示板です
+This is a simple bulletin board created with MySQL and PHP.
