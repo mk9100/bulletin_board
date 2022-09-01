@@ -112,7 +112,6 @@
         }else if(!empty($_POST["name"]) && empty($_POST["comment"])){
             echo "コメントが記入されていません";
         }
-     
         //編集対象番号が入力・送信された時(edit_inが入力・送信された時)
         if(!empty($_POST["edit_in"])){
             //パスワードが正しいか判断(現在のパスワードはpassとなっている)
@@ -144,7 +143,6 @@
                 echo "パスワードが正しくありません";
             }
         }
-        
         //削除対象番号が入力・送信された時(deleteが入力・送信された時)
         if(!empty($_POST["delete"])){
             if($_POST["delete_pass"] == "pass"){
@@ -170,7 +168,6 @@
             }
         }
     ?>
-        
         <form action="" method="post">
         <!--名前を入力するフォームを作成-->
         <input type="text" name="name" placeholder="名前" value = "<?php if(isset($newname)){echo $newname;}?>"><br>
@@ -196,8 +193,10 @@
         <input type="submit" name="edit_submit" value="編集">
     </form>
     <?php
-            ///テーブルの内容を表示する
+            //テーブルの内容を表示する
+            //タイトル表示
             echo "【投稿一覧】";
+            //水平の横線を引く
             echo "<hr>";
             //SELECT文でテーブルからデータを抽出する
             //'*'はテーブルの中身全てを指定している
@@ -217,7 +216,6 @@
                 //水平の横線を引く
                 echo "<hr>";
             }
-       
     ?>
     </body>
 </html>
