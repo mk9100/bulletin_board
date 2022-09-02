@@ -92,7 +92,6 @@
                     $stmt->bindParam(':name', $name, PDO::PARAM_STR);
                     $stmt->bindParam(':comment', $comment, PDO::PARAM_STR);
                     $stmt->bindParam(':date', $date, PDO::PARAM_STR);
-                    //$stmt->bindParam(':pass', $post_pass, PDO::PARAM_STR);
                     $stmt->bindParam(':id', $id, PDO::PARAM_INT);
                     //SQLを実行
                     //executeはprepareで作成された文を実行する
@@ -180,13 +179,13 @@
         <!--送信ボタンを作成-->
         <input type="submit" name="submit"><br><br>
         <!--削除対象番号を入力するフォームを作成-->
-        <input type="number" name="delete" id="delete" placeholder = "削除対象番号"><br>
+        <input type="number" name="delete" placeholder = "削除対象番号"><br>
         <!--パスワードを入力するフォームを作成-->
         <input type="password" name="delete_pass" placeholder="パスワード">
         <!--削除ボタンを作成-->
         <input type="submit" name="delete_submit" value="削除"><br><br>
         <!--編集対象番号を入力するフォームを作成-->
-        <input type="number" name="edit_in" id="edit_in" placeholder = "編集対象番号"><br>
+        <input type="number" name="edit_in" placeholder = "編集対象番号"><br>
         <!--パスワードを入力するフォームを作成-->
         <input type="password" name="edit_pass" placeholder="パスワード">
         <!--編集ボタンを作成-->
